@@ -1,0 +1,21 @@
+block config
+    include ../config/config.pug
+doctype html
+html
+    head
+        title #{pageTitle} / #{siteTitle}
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        meta(name='description' content = description)
+        link(rel="stylesheet", href="../css/bootstrap.css")
+        link(rel="stylesheet", href="../css/main.css")
+    body
+        header
+            nav
+                include ../blocks/menu.pug
+        div
+            block banner
+            img(src = '/img/' + currentPage + '.jpg' alt="")
+        main
+            block main
+        footer
+            block footer
