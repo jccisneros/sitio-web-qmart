@@ -4,25 +4,28 @@
   --main-font: 'Raleway';
   --alternate-font: 'Sans-serif';
   --secondary-font: 'Open sans';
-  --font-size: 16px;
-  --line-height: 1.6;
+  --font-size: 14px;
+  --font-weight: 500;
+  --line-height: 2;
+  --letter-spacing: 3px;
  
   --main-color: #fff;
-  --main-modal-color: rgb(202, 201, 201);
+  --main-modal-color: rgb(165, 165, 165);
   
-  --second-color: #f12711;
-  --second-color-gradient: -webkit-linear-gradient(to right, #f5af19, #f12711); 
-  --second-color-gradient-old: linear-gradient(to right, #f5af19, #f12711); 
+  --second-color: #FC4A1A;
+  --second-color-gradient: -webkit-linear-gradient(to right,  #F7B733, #FC4A1A); 
+  --second-color-gradient-old: linear-gradient(to right,  #F7B733, #FC4A1A); 
 
-  --alternate-color: #41295a;
-  --alternate-color-gradient: -webkit-linear-gradient(to right, #2F0743, #41295a);
-  --alternate-color-gradient-old: linear-gradient(to right, #2F0743, #41295a); 
+  --alternate-color: #211629;
+  --alternate-color-gradient: -webkit-linear-gradient(to right, #453C8B, #211629);
+  --alternate-color-gradient-old: linear-gradient(to right, #453C8B, #211629); 
 
   --bg-color: var(--main-color);
   --bg-alternate-color: var(--alternate-color-gradient);
 
   --text-color: #000;
+  --text-hover-color: rgb(48, 48, 48);
 
   --link-color: var(--main-modal-color);
-  --link-hover-color: var(--main-color);
+  --link-hover-color: var(--main-color);  
 }

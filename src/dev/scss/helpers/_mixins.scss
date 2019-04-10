@@ -1,0 +1,18 @@
+@mixin main-gradient {
+  background: var(--second-color);
+  background: var(--second-color-gradient);
+  background: var(--second-color-gradient-old);
+}
+
+@mixin main-gradient-border {
+  border-color: var(--second-color) !important;  
+  border-style: solid;
+  border-width: 2px;
+  background-color: #fff !important;
+}
+
+@mixin second-gradient {
+  background: var(--alternate-color);
+  background: var(--alternate-color-gradient);
+  background: var(--alternate-color-gradient-old);
+}
