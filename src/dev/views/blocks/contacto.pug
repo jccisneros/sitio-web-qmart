@@ -2,7 +2,7 @@
     .container-fluid
         .row.sub-section
             .offset-lg-1.col-lg-4.text-contacto.text-lg-left.mt-auto.mb-auto
-                h2.titulo.texto-degradado.mt-2 Contacto
+                h2.title.text-gradient-secondary Contacto
                 h3.contacto-titulo ¿Tienes un proyecto en mente?
                 h4.contacto-texto ¡Contáctanos y lo haremos realidad!
                 .texto.sub-texto <i class="fas fa-phone"></i> 
@@ -12,37 +12,38 @@
                 .texto.sub-texto.mt-4.mb-4.pb-4
                     a(href="https://www.facebook.com/Qmart-Estudio-Creativo-305249326980754/?modal=admin_todo_tour" target="_blank") <i class="fab fa-facebook-square"></i>
                     span.ml-2: a(href="https://www.instagram.com/estudioqmart/" target="_blank") <i class="fab fa-instagram"></i>
-            .col-lg-7
-                img(src="img/contacto2.svg", alt="").img-fluid.img-contacto
-                .form-contacto.text-white
+            .col-lg-7.contact
+                .container-img
+                    img(src="img/contacto2.svg", alt="").img-fluid.img-contact
+                .form-contact.text-white
                     <form>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label class="texto-contacto" for="inputEmail4">Nombre</label>
-                                <input type="text" class="form-control" id="inputName4" placeholder="Nombre">
+                                <input type="text" class="form-control" id="inputName4">
                             </div>
                             <div class="form-group col-md-6">
                             <label class="texto-contacto" for="inputPassword4">E-mail</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail">
+                            <input type="email" class="form-control" id="inputEmail4">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label class="texto-contacto" for="inputEmail4">Teléfono</label>
-                                <input type="text" class="form-control" id="inputName4" placeholder="Teléfono">
+                                <input type="text" class="form-control" id="inputName4">
                             </div>
                             <div class="form-group col-md-6">
                             <label class="texto-contacto" for="inputPassword4">Asunto</label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Asunto">
+                            <input type="text" class="form-control" id="inputEmail4">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label class="texto-contacto" for="inputEmail4">Mensaje</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Mensaje"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
                             </div>
                         </div>
                         .text-center
-                            button.btn.btn-primario.btn-link.btn-lg.text-white
-                                    span.btn-text Enviar
+                            button.btn.btn-raised.btn-lg.btn-gradient-section
+                                    span.btn-text Enviar ff
                     </form>

@@ -1,14 +1,34 @@
-.title{
-  font: {
-    family: var(--secondary-font);
-    weight: 700;    
-  }  
+.section{
+  margin-top: 10%;
+  margin-bottom: 8%;
+}
+
+.sub-section{
+  margin-top: 3%;  
+}
+
+.bg-gradient{
+  @include second-gradient;  
+}
+
+
+.title{  
+  font-family: var(--secondary-font) !important;
+  font-weight: bold !important;        
+}
+
+.title-section{
+  margin-top: 1%;
   margin-bottom: 4%;
 }
 
 .text{
   margin-top: 8%;
   margin-bottom: 10%;
+}
+
+.text-section{   
+  margin-top: 11%;
 }
 
 .text-gradient{
@@ -30,9 +50,34 @@
   @include main-gradient;   
   width:  100%;
   min-width:  100%;
-  border-radius: 25px !important;
+  border-radius: 30px !important;  
+}
+
+.btn-gradient-section{
+  @include main-gradient;     
+  width:  40%;
+  min-width:  40%;
+  border-radius: 30px !important; 
 }
 
 .btn-text{
   font-size: 70% !important;
+  color: var(--main-color)  ;
+  font-weight: bold;
+}
+
+.btn-text:hover{  
+  color: var(--main-color)  ;  
+}
+
+.orange{
+  color: var(--second-color);
+  font-weight: 700;
+}
+
+.img-min{  
+  max-width: 70%;
+  width: 70%;
+  height: auto; 
+  margin-top: 10%;   
 }
