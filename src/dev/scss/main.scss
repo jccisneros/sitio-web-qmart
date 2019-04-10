@@ -1,5 +1,18 @@
-body {
-    background-color: #000000;
-    color: #fff;
-    padding: 20px;
-}
+/* ******* Helpers ******* */
+@import './helpers/variables';
+@import './helpers/mixins';
+@import './helpers/reset';
+@import './helpers/utilities';
+@import './helpers/pages';
+
+/* ******* Components ******* */
+@import './components/menu';
+@import './components/social_media';
+@import './components/header';
+@import './components/somos';
+@import './components/servicios';
+@import './components/elegirnos';
+@import './components/portafolio';
+@import './components/contacto';
+@import './components/instagram';
+@import './components/footer';

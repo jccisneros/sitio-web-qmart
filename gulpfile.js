@@ -13,7 +13,9 @@ gulp.task('pug', () => {
 gulp.task('sass', () => {
     return gulp.src([
         'node_modules/bootstrap/scss/bootstrap.scss',
-        'src/dev/scss/*.scss'
+        'src/dev/scss/*.scss',
+        'src/dev/scss/components/*.scss',
+        'src/dev/scss/helpers/*.scss'
     ])
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(gulp.dest('src/dist/css'))
@@ -22,7 +24,7 @@ gulp.task('sass', () => {
 
 gulp.task('js', () => {
     return gulp.src([
-        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        'node_modules/bootstrap/dist/js/bootstrap-material-design.min.js',
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/popper.js/dist/umd/popper.min.js'
     ])
@@ -36,7 +38,7 @@ gulp.task('serve', ['sass', 'pug'], () => {
     });
     gulp.watch([
         'node_modules/bootstrap/scss/bootstrap.scss',
-        'src/dev/scss/*.scss',
+        'src/dev/scss/**/*.scss',
         'src/dev/views/**/*.pug'
     ], ['sass', 'pug']);
     gulp.watch('src/dist/*.html').on('change', browserSync.reload);

@@ -6,16 +6,23 @@ html
         title #{pageTitle} / #{siteTitle}
         meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
         meta(name='description' content = description)
-        link(rel="stylesheet", href="../css/bootstrap.css")
-        link(rel="stylesheet", href="../css/main.css")
+        link(rel="stylesheet", href="./css/font-awesome.min.css")
+        link(rel="stylesheet", href="./css/owl.carousel.min.css")
+        link(rel="stylesheet", href="./css/owl.theme.default.min.css")
+        link(rel="stylesheet", href="./css/bootstrap-material-design.min.css")
+        link(rel="stylesheet", href="./css/main.css")
     body
-        header
-            nav
-                include ../blocks/menu.pug
-        div
-            block banner
-            img(src = '/img/' + currentPage + '.jpg' alt="")
+        header            
+            include ../blocks/menu.pug
         main
-            block main
-        footer
-            block footer
+            div Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci atque eius quia ab dicta culpa vero hic, cumque aspernatur corrupti reiciendis quaerat, laudantium in, quod harum quisquam! Id, quisquam aspernatur!
+            div.bg-dark
+                a(href="#") hola mundo
+            
+        footer            
+
+        script(src="./js/jquery.min.js")
+        script(src="./js/popper.min.js")
+        script(src="./js/owl.carousel.min.js")
+        script(src="./js/bootstrap-material-design.min.js")
+        script(src="./js/main.js")
