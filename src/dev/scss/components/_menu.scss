@@ -1,23 +1,26 @@
-.navbar-nav{
-  margin-right: 5%;
-}
 
-.navbar{
-  box-shadow: none !important;
+
+.navbar{  
   z-index: 99 !important;
 }
 
 .nav-link{
   text-transform: none !important;
-  color: var(--main-color) !important;
+  color: var(--text-color) !important;
   font-weight: 550 !important;
-  font-size: .8em !important;
+  font-size: 1em !important;
   margin-left: 15px;
   letter-spacing: 4px !important;
-  transition: all .3s ease-out;
+  transition: all .2s ease-out;
 
   &:hover{
-    color: var(--main-modal-color) !important;
-    font-weight: 550 !important;
+    color: var(--second-color) !important;
+    font-weight: 600 !important;
   }
 }
+
+@media (max-width: 575.98px) {
+  .navbar-nav{
+    margin-right: 0;
+  }  
+ }

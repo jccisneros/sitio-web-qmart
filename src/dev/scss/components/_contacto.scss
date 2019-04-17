@@ -1,16 +1,82 @@
-.contact{
-  position: relative;
-  display: inline-block;   
+.bg-light{
+  background-color: #fff !important; 
 }
 
-.form-contact{
+.title-contact{
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+
+.subtitle-contacto{
+  font-size: 100%;
+  font-weight: 700;
+}
+
+.text-contact{
+  margin: 2% 0;
+}
+
+
+.info-contact{
+  margin-top: 5%;
+  margin-bottom: 8%;
+}
+
+.info-text{
+  font-weight: 400; 
+  font-size: .8em; 
+}
+
+.contact{
+  position: relative;
+  display: inline-block;
+  margin-left: -20px;   
+}
+
+.img-contacto{
   position: absolute;
-  top: 8%;
-  left: 15%;  
-  min-width: 80%;
+  z-index: -20;
+  height: 100%;
+  min-height: 100%;
+  width: 120%;  
+}
+
+.img-contacto2{
+  position: absolute;
+  z-index: -20;    
+  width: 200%;   
+  height: 100%;  
+}
+
+.form-contact{ 
+  margin-left: 12%;  
+  margin-top: 10%;  
+  margin-bottom: 10%;  
   width: 80%;  
 }
 
-.container-img{
-  margin-right: -40px;
+
+.fa-facebook-square, .fa-instagram{
+  @include second-gradient;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+
+.fa-phone, .fa-envelope{
+  @include main-gradient;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  font-weight: bold;  
+}
+
+@media (min-width: 768px) { 
+  .info-text{
+    font-weight: 600; 
+    font-size: 1em; 
+  }
 }

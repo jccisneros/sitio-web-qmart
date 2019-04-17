@@ -1,0 +1,45 @@
+.footer{  
+  margin: -3%;
+}
+
+.footer-img{
+  position: relative;
+  display: inline-block;   
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+.text-footer{
+  position: absolute;
+  bottom: 5%;
+  left: 2%;        
+} 
+
+.menu-footer{
+  color: var(--link-hover-color) !important; 
+  margin-right: 3%;   
+}
+
+.menu-footer:hover{
+  color: var(--link-color) !important;  
+}
+
+.footer-bg{
+ background-color: #22002B;
+ z-index: 999999;
+ margin-top: 20%;
+}
+
+.footer-date{
+  margin-top: 5%;
+}
+
+.footer-menu{
+  margin-top: 10%;
+}
+
+.logo-footer{
+  margin-top: 10%;
+  width: 50%;
+  height: auto;
+}

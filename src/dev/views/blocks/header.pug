@@ -1,20 +1,29 @@
 .container-fluid.top-section
-    .row    
-        img(src="img/header.png").img-fluid.header-img.d-none.d-md-block.float-right
-        div.offset-md-1.col-md-5
-            .header-text
-                h1.text-gradient.title.text-center.text-md-left.d-none.d-md-block Qmart
-                h1.title.text-center.text-md-left.d-block.d-md-none Qmart
-                h1.title.text-center.text-md-left
-                    span Estudio Creativo
-            img(src="img/header2.png").img-fluid.d-block.d-md-none.img-cohete.mr-auto.ml-auto.img-min
-            .text.text-justify En el estudio Qmart te ayudamos a comunicar la esencia de tú negocio por medio del marketing, el diseño y las buenas prácticas. Aportamos soluciones creativas y funcionales para hacer crecer la presencia de tu marca en los medios digitales.
-            .row
-                div.text-center.text-md-left.d-none.d-lg-block.col-md-4
-                    a(href="#nosotros")
-                        button.btn.btn-raised.btn-md.btn-gradient
-                            span.btn-text Conócenos
-                div.text-center.text-md-left.d-none.d-lg-block.col-md-4
-                    a(href="#nosotros")
-                        button.btn.btn-raised.btn-md.btn-gradient
-                            span.btn-text Contacto
+  .row    
+    img(src="img/header.svg").img-fluid.header-img.d-none.d-md-block.float-right
+    div.offset-md-1.col-md-5
+      .header-text
+        h1.text-gradient.title.text-center.text-md-left.d-none.d-md-block Qmart
+        h1.title.text-center.text-md-left.d-block.d-md-none.top-section-mobile Qmart
+        h1.title.text-center.text-md-left
+          span Estudio Creativo
+      img(src="img/header2.png").img-fluid.d-block.d-md-none.img-cohete.mr-auto.ml-auto.img-min
+      .text.text-justify En nuestro estudio te ayudamos a 
+        span.font-weight-bold comunicar 
+        |la esencia de tú negocio por medio del 
+        span.font-weight-bold marketing, 
+        |el diseño y las buenas prácticas. Aportamos 
+        span.font-weight-bold soluciones creativas 
+        |y funcionales para hacer 
+        span.font-weight-bold crecer 
+        |la presencia de tu marca en los 
+        span.font-weight-bold medios digitales.
+      .row
+        div.text-center.text-md-left.d-none.d-lg-block.col-md-4
+          a(href="#nosotros")
+            button.btn.btn-raised.btn-md.btn-gradient
+              span.btn-text Conócenos
+        div.text-center.text-md-left.col-md-4
+          a(href="#contacto")
+            button.btn.btn-raised.btn-md.btn-gradient
+              span.btn-text Conectemos

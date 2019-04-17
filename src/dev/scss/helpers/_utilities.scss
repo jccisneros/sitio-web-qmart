@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .satelite{
   margin-left: -15px;
 }
@@ -8,4 +12,28 @@
 
 .form-control{
   color: rgb(190, 190, 190) !important;  
+}
+
+.owl-prev, .owl-next{    
+  font-size: 60px !important;    
+  margin-top: -21% !important;  
+  position: absolute !important;
+  color: var(--alternate-color) !important;
+}
+
+.owl-prev{  
+  margin-left: -3% !important;  
+}
+
+.owl-next{  
+  right: 0 !important;
+  margin-right: -3% !important;
+}
+
+
+.img-balls{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  
 }

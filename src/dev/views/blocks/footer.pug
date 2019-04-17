@@ -1,17 +1,83 @@
-.section
+.section.footer.d-none.d-lg-block
     .container-fluid
         .row
             .col-md-12
-                img(src="img/footer3.svg", alt="").img-fluid
-                .container-fluid.footer-texto
+                img(src="img/footer.svg", alt="").img-fluid.footer-img
+                .container-fluid.text-footer
                     .row
                         .offset-1.col-lg-4.text-center.text-white
                             script.
                                 document.write('@' + new Date().getFullYear() + ' ')
-                            |Qmart - Estudio Creativo
+                            |Qmart - Estudio Creativo. 
+                            .text-center.text-white Todos los derechos reservados
                         .col-lg-6.text-center.text-white.d-none.d-lg-block
-                            a(href="/").text-white.menu-footer Inicio 
+                            a(href="#").text-white.menu-footer Inicio 
                             a(href="#nosotros").text-white.menu-footer Sobre Nosotros 
-                            a(href="#servicios").text-white.menu-footer Servicios 
-                            a(href="#portafolio").text-white.menu-footer Portafolio 
+                            a(href="#servicios").text-white.menu-footer Servicios                             
                             a(href="#contacto").text-white.menu-footer Contacto 
+                            a(href="#instagram").text-white.menu-footer Galería
+                            
+.section.footer.d-block.d-lg-none
+    .container-fluid.footer-bg
+        .row            
+            .col-md-6.text-center
+                img(src="img/logo-white.svg", alt="").logo-footer
+            .col-md-6.text-white.text-center 
+                h5.footer-menu Navegación
+                ul
+                    li
+                        a(href="#").text-white.menu-footer Inicio 
+                    li
+                        a(href="#nosotros").text-white.menu-footer Sobre Nosotros 
+                    li
+                        a(href="#servicios").text-white.menu-footer Servicios                             
+                    li  
+                        a(href="#contacto").text-white.menu-footer Contacto 
+                    li 
+                        sa(href="#instagram").text-white.menu-footer Galería 
+            .col-md-6.text-white.text-center.footer-date
+                h5 Contacto
+                ul
+                    li
+                        a(href="tel:+593967348636").menu-footer +593 967 348636
+                    li
+                        a(href="mailto:ventas@estudiocreativoqmart.com").menu-footer ventas@estudiocreativoqmart.com
+            .col-md-6.text-white.text-center.footer-date
+                script.
+                    document.write('@' + new Date().getFullYear() + ' ')
+                |Qmart - Estudio Creativo
+                .text-center.text-white Todos los derechos reservados
+                            
+                            
+script(src="./js/popper.min.js")        
+script(src="./js/bootstrap-material-design.min.js")
+script(src="./js/main.js")
+script.
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items:2,
+            loop:true,            
+            margin:10,
+            nav:false,                        
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsiveClass:true,
+            responsive:{                
+                678:{
+                    items:2,
+                    autoplay:true,
+                },
+                1000:{
+                    items:3,                   
+                    nav:true,
+                    autoplay:true,
+                }
+            }            
+        });
+        $('.play').on('click',function(){
+            owl.trigger('play.owl.autoplay',[1000])
+        })
+        $('.stop').on('click',function(){
+            owl.trigger('stop.owl.autoplay')
+        })
+    });  

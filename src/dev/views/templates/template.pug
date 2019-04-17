@@ -3,9 +3,13 @@ block config
 doctype html
 html
     head
-        title #{pageTitle} / #{siteTitle}
+        title #{siteTitle}
         meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
         meta(name='description' content = description)
+        meta(name='viewport' content = "width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")                
+        link(rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png")
+        link(rel="icon" type="image/png" href="img/favicon.png")                
         link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
         link(rel="stylesheet", href="./css/bootstrap-material-design.min.css")
         link(rel="stylesheet", href="./css/main.css")
@@ -18,22 +22,19 @@ html
             include ../blocks/menu.pug
 
         main
-            include ../blocks/header.pug
+            include ../blocks/balls.pug
+            include ../blocks/header.pug            
+            include ../blocks/social-media.pug
             include ../blocks/somos.pug
-            include ../blocks/servicios.pug
             include ../blocks/elegirnos.pug
+            include ../blocks/servicios.pug
+            include ../blocks/workflow.pug
             include ../blocks/portafolio.pug
             include ../blocks/contacto.pug
             include ../blocks/instagram.pug
-            include ../blocks/footer.pug
+            
             
             
         footer            
-        
-        script(src="./js/popper.min.js")        
-        script(src="./js/bootstrap-material-design.min.js")
-        script(src="./js/main.js")
-        script.
-            $(document).ready(function(){
-                $(".owl-carousel").owlCarousel();
-            });        
+            include ../blocks/footer.pug       
+              

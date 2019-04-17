@@ -1,17 +1,18 @@
 .top-section{
-  margin-top: 4%;  
+  margin-top: 12%;  
 }
 
+.top-section-mobile{
+  margin-top: 20%;  
+}
 .header-text{
   margin-bottom: 4%;
 }
 
 .header-img{
-  position: absolute; 
-  max-width: 78%;
-  width: 78%;
-  height: 95%;  
+  position: absolute;   
+  width: 72%;  
+  height: auto;
   top: 0 !important;
   right: 0 !important;
 }
-

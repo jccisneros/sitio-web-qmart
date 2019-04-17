@@ -7,7 +7,7 @@ body{
   letter-spacing: var(--letter-spacing);
   color: var(--font-color);
   background-color: var(--bg-color);  
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 *,

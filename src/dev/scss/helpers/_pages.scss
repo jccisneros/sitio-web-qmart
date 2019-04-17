@@ -4,7 +4,7 @@
 }
 
 .sub-section{
-  margin-top: 3%;  
+  margin-top: 8%;  
 }
 
 .bg-gradient{
@@ -15,6 +15,11 @@
 .title{  
   font-family: var(--secondary-font) !important;
   font-weight: bold !important;        
+}
+
+h2{
+  font-family: var(--secondary-font) !important;
+  font-size: 3em;
 }
 
 .title-section{
@@ -28,7 +33,7 @@
 }
 
 .text-section{   
-  margin-top: 11%;
+  margin-top: 8%;
 }
 
 .text-gradient{
@@ -64,6 +69,7 @@
   font-size: 70% !important;
   color: var(--main-color)  ;
   font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .btn-text:hover{  
@@ -76,8 +82,6 @@
 }
 
 .img-min{  
-  max-width: 70%;
-  width: 70%;
   height: auto; 
   margin-top: 10%;   
 }
