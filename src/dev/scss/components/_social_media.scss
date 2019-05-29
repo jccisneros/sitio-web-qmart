@@ -14,3 +14,13 @@
   width: 40%;
   text-decoration: none;
 }
+
+.logo-w{
+  width: 13%;
+}
+
+@media (max-width: 575px) {
+  .logo-w{
+    width: 40%;
+  }
+}

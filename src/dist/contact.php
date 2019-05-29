@@ -8,9 +8,10 @@
     $message = @trim(stripslashes($_POST['message']));
 
     $email_from = $email;
-    $email_to = 'estudiocreativoqmart@gmail.com';
+    $email_to = 'ventas@estudiocreativoqmart.com';
     $body = 'Nombre: ' . $name . "\n\n" . 'E-mail: ' . $email . "\n\n" . 'Teléfono: ' . $telefono . "\n\n" . 'Asunto: ' . $asunto . "\n\n" . 'Mensaje: ' . $message;
-    $success = @mail($email_to, $subject, $body, 'From: <'.$email_from.'>');
+    $success = @mail($email_to, $asunto, $body, 'From: <'.$email_from.'>');
 
     Header("Location: ./index.html");
+    
 ?>

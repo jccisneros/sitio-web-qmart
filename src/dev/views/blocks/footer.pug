@@ -1,8 +1,8 @@
-.section.footer.d-none.d-lg-block
-    .container-fluid
+.section.footer#footer
+    .container-fluid.d-none.d-lg-block
         .row
             .col-md-12
-                img(src="img/footer.svg", alt="").img-fluid.footer-img
+                img(src="img/universo-footer.svg", alt="ilustración de universo, footer de estudio creativo").img-fluid.footer-img
                 .container-fluid.text-footer
                     .row
                         .offset-1.col-lg-4.text-center.text-white
@@ -15,13 +15,11 @@
                             a(href="#nosotros").text-white.menu-footer Sobre Nosotros 
                             a(href="#servicios").text-white.menu-footer Servicios                             
                             a(href="#contacto").text-white.menu-footer Contacto 
-                            a(href="#instagram").text-white.menu-footer Galería
-                            
-.section.footer.d-block.d-lg-none
-    .container-fluid.footer-bg
+                            a(href="#instagram").text-white.menu-footer Galería                            
+    .container-fluid.footer-bg.d-block.d-lg-none
         .row            
             .col-md-6.text-center
-                img(src="img/logo-white.svg", alt="").logo-footer
+                img(src="img/logo-estudio-creativo-qmart-blanco.svg", alt="").logo-footer
             .col-md-6.text-white.text-center 
                 h5.footer-menu Navegación
                 ul
@@ -51,6 +49,7 @@
                             
 script(src="./js/popper.min.js")        
 script(src="./js/bootstrap-material-design.min.js")
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 script(src="./js/main.js")
 script.
     $(document).ready(function(){
@@ -80,4 +79,10 @@ script.
         $('.stop').on('click',function(){
             owl.trigger('stop.owl.autoplay')
         })
-    });  
+    });
+script.
+    $("#sticky").modal({
+        escapeClose: false,
+        clickClose: false,
+        showClose: false
+    });
