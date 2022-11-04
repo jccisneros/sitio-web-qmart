@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-cache": "^1.1.1",
     "gulp-cli": "^2.0.1",
     "gulp-cwebp": "^3.0.0",
